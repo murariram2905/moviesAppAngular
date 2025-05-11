@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">🎬 Movie Search</h2>
+
+  <div class="input-group mb-3">
+    <input [(ngModel)]="searchText" class="form-control" placeholder="Enter movie title" />
+    <button class="btn btn-primary" (click)="search()">Search</button>
+  </div>
+
+  <div *ngIf="error" class="text-danger mb-3 text-center">
+    {{ error }}
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let movie of movies">
+      <div class="card h-100 shadow">
+        <img [src]="movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/300x450?text=No+Image'" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.Title }}</h5>
+          <p class="card-text">Year: {{ movie.Year }}</p>
+          <p class="card-text">Type: {{ movie.Type }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

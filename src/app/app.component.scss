@@ -1,0 +1,118 @@
+/* Base Layout */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Search Bar */
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input.form-control {
+  width: 60%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border: 2px solid #5f5f5f;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  background: #f7f7f7;
+  transition: border 0.3s;
+}
+
+input.form-control:focus {
+  border-color: #007bff;
+}
+
+button.btn {
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.text-danger {
+  color: #ff4e4e;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Grid for Cards */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Movie Cards */
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+/* Background Gradient */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  min-height: 100vh;
+}
