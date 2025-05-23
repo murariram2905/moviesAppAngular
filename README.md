@@ -1,59 +1,98 @@
-# Movies
+# 🎬 Wall Poster Movies
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Wall Poster Movies is a responsive Angular application that allows users to search and view movie posters using the OMDb API.
 
-## Development server
+![Wall Poster Movies Screenshot](https://via.placeholder.com/1200x600?text=Screenshot+Preview)
 
-To start a local development server, run:
+---
+
+## ✨ Features
+
+- 🔍 Search movies by title
+- 🖼 Display movie posters, year, and type
+- 📱 Responsive design with modern UI
+- ⚠️ Error handling for empty or failed search
+- 🎨 Styled using Bootstrap and custom CSS
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or above recommended)
+- Angular CLI
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
+git clone https://github.com/yourusername/wall-poster-movies.git
+cd wall-poster-movies
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the development server:
+
+bash
+Copy
+Edit
 ng serve
-```
+The app will be running at http://localhost:4200.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔧 Configuration
+This app uses the OMDb API. You can replace the API key in the service file:
 
-## Code scaffolding
+ts
+Copy
+Edit
+private apiKey = 'your_api_key';
+To get your API key, sign up at OMDb.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+📁 Project Structure
+cpp
+Copy
+Edit
+src/
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── app.component.ts
+│   └── app.module.ts
+├── assets/
+├── environments/
+├── index.html
+└── styles.css
+📸 UI Preview
+Home page with search input
 
-```bash
-ng generate component component-name
-```
+Dynamic card layout for results
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Placeholder image for missing posters
 
-```bash
-ng generate --help
-```
+🛠 Technologies Used
+Angular
 
-## Building
+TypeScript
 
-To build the project run:
+Bootstrap 5
 
-```bash
-ng build
-```
+OMDb API
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🤝 Contributing
 
-## Running unit tests
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📜 License
 
-```bash
-ng test
-```
+This project is licensed under the MIT License.
 
-## Running end-to-end tests
+## 🙌 Acknowledgements
 
-For end-to-end (e2e) testing, run:
+OMDb API
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Bootstrap
